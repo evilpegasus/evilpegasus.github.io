@@ -1,2 +1,2 @@
 # evilpegasus.github.io
-My cool website
+My cool (website)[evilpegasus.github.io]
