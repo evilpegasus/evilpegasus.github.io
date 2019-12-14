@@ -5,7 +5,6 @@
   /*original w and h was 366*/
   margin: auto;
   position: relative;
-  border: 1px solid #FFFFFF;
 }
 
 .circle{
@@ -14,9 +13,8 @@
   top: 0;
   width: 666px;
   height: 666px;
-  animation: circle 10s linear infinite;
+  animation: circle 2s linear infinite;
   will-change: transform;
-  border: 1px solid #FFFFFF;
 }
 .circle:nth-child(1){animation-duration:30s}
 .circle:nth-child(2){animation-duration:40s}
@@ -40,20 +38,24 @@ body {
 
 p {
   color: #FFFFFF;
+  font-size: large;
 }
 
-.center {
-  margin: auto;
-  padding: 30px;
-  text-align: center;
+.center-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .panel {
   margin: auto;
   width: 50%;
+  margin-top: 100px;
   padding: 10px;
   border-style: solid;
-  border-width: 1px;
-  border-radius: 50px;
+  border-radius: 25px;
   background-color: #121212; 
 }
