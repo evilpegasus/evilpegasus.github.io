@@ -1,0 +1,21 @@
+.rotate {
+    animation: rotation 16s infinite linear;
+    height: 366;
+    width: 366;
+    }
+  
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
