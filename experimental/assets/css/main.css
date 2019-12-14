@@ -1,23 +1,22 @@
- .center {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  border-width: 1px;
-}
-
+/*Rotating circles*/
 .circles{
-  width: 366px;
-  height: 366px;
+  width: 666px;
+  height: 666px;
+  /*original w and h was 366*/
   margin: auto;
-  position: relative
+  position: relative;
+  border: 1px solid #FFFFFF;
 }
 
 .circle{
   position: absolute;
   left: 0;
   top: 0;
+  width: 666px;
+  height: 666px;
   animation: circle 10s linear infinite;
-  will-change: transform
+  will-change: transform;
+  border: 1px solid #FFFFFF;
 }
 .circle:nth-child(1){animation-duration:30s}
 .circle:nth-child(2){animation-duration:40s}
@@ -36,9 +35,25 @@
 }
 
 body {
- background-color: #121212; 
+ background-color: #000000; 
 }
 
 p {
   color: #FFFFFF;
+}
+
+.center {
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.panel {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  background-color: #121212; 
 }
