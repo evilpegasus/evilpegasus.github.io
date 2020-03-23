@@ -11,6 +11,14 @@ h1,h2,h3 {
     line-height:1.2
 }
 
+a {
+    color: green;
+}
+
+i {
+    color: black;
+}
+
 .profilepicture {
     border-radius: 50%;
     width: 32%;
