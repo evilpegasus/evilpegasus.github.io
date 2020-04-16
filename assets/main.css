@@ -58,3 +58,7 @@ i {
     display: block;
     margin: auto;
 }
+
+.centertext {
+    text-align: center;
+}
