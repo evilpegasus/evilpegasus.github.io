@@ -8,6 +8,10 @@
             function myFunction() {
                 var element = document.body;
                 element.classList.toggle("darkmode");
+                var icons = document.getElementsByClassName("fa");
+                for (i = 0; i < icons.length; i++) {
+                    icons[i].classList.toggle("darkmode");
+                }
             }
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
