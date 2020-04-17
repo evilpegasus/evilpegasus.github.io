@@ -5,13 +5,20 @@
         <!-- Fontawesome icons -->
         <script src="https://use.fontawesome.com/b3e5314a5d.js"></script>
         <script>
-            function myFunction() {
-                var element = document.body;
-                element.classList.toggle("darkmode");
+            function toggleDarkMode() {
+                var body = document.body;
+                body.classList.toggle("darkmode");
                 var icons = document.getElementsByClassName("fa");
                 for (i = 0; i < icons.length; i++) {
                     icons[i].classList.toggle("darkmode");
                 }
+                var text = document.getElementById("darkmode-text");
+                if(document.getElementById("darkmode-checkbox").checked) {
+                    text.textContent = "Light Mode";
+                } else {
+                    text.textContent = "Dark Mode";
+                }
+                
             }
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,6 +44,12 @@
             <a target="_blank" href="WeChat.html"><i class="fa fa-weixin fa-3x"></i></a>
         </div>
         <br>
-        <button onclick="myFunction()">Dark mode</button>
+        <p id="darkmode-text">Dark Mode</p>
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox" onclick="toggleDarkMode()" id="darkmode-checkbox">
+            <span class="slider round"></span>
+        </label>
+
     </body>
 </html>
