@@ -7,9 +7,28 @@
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="assets/main.css">
         <title>
             NEVER GONNA GIVE YOU UP
         </title>
+
+        <script>
+            function toggleDarkMode() {
+                var body = document.body;
+                body.classList.toggle("darkmode");
+                var icons = document.getElementsByClassName("fa");
+                for (i = 0; i < icons.length; i++) {
+                    icons[i].classList.toggle("darkmode");
+                }
+                var text = document.getElementById("darkmode-text");
+                if(document.getElementById("darkmode-checkbox").checked) {
+                    text.textContent = "Light Mode";
+                } else {
+                    text.textContent = "Dark Mode";
+                }
+                
+            }
+        </script>
     </head>
     <body>
         <div id="player"></div>
@@ -47,6 +66,18 @@
         </script>
         <br>
         <p>Rick Rolled in 2020 lul</p>
+
+
+
+        <!-- Dark mode switch fixed in bottom right corner -->
+        <div class="fixed">
+            <p id="darkmode-text">Dark Mode</p>
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox" onclick="toggleDarkMode()" id="darkmode-checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </body>
 </html>
 
