@@ -8,6 +8,7 @@
             function toggleDarkMode() {
                 var body = document.body;
                 body.classList.toggle("darkmode");
+                //document.getElementById("switch-box").toggle("darkmode");
                 var icons = document.getElementsByClassName("fa");
                 for (i = 0; i < icons.length; i++) {
                     icons[i].classList.toggle("darkmode");
@@ -34,7 +35,7 @@
         <h1>Ming Fong</h1>
         <p>Hi! My name is Ming Fong.</p>
         <p>I am a freshman at the University of California Berkeley studying physics in the College of Letters and Science.</p>
-        <p>I graduated from Hazen High School in June 2020. I founded and led the <a target="_blank" href="https://www.facebook.com/groups/HazenTT/">Hazen Table Tennis Club</a> as its club president and competitive team captain. I was also the president of the <a target="_blank" href="https://www.facebook.com/groups/HazenMath/">Hazen Math Club</a> and the <a target="_blank" href="https://www.facebook.com/groups/HazenEC/">Hazen Earth Corps</a>.</p>
+        <p>I graduated from Hazen High School in June 2020. While there, I founded and led the <a target="_blank" href="https://www.facebook.com/groups/HazenTT/">Hazen Table Tennis Club</a> as its club president and competitive team captain. I was also the president of the <a target="_blank" href="https://www.facebook.com/groups/HazenMath/">Hazen Math Club</a> and the <a target="_blank" href="https://www.facebook.com/groups/HazenEC/">Hazen Earth Corps</a>.</p>
         <p>Previously, I interned at <a target="_blank" href="https://www.microsoft.com/">Microsoft</a> in the Azure COSINE organization during the summer of 2019. Before that, I was a tutor and center assistant at <a target="_blank" href="https://www.kumon.com/renton-highlands">Kumon</a>.</p>
         <p>Check out my <a target="_blank"href="Resume.pdf">resume</a> for more details.</p>
         <h2>Links</h2>
@@ -44,10 +45,12 @@
             <a target="_blank" href="https://github.com/evilpegasus/"><i class="fa fa-github-square fa-3x"></i></a>
             <a target="_blank" href="WeChat.html"><i class="fa fa-weixin fa-3x"></i></a>
         </div>
+        <br>
+        <br>
 
         <!-- Dark mode switch fixed in bottom right corner -->
-        <div class="fixed">
-            <p id="darkmode-text">Dark Mode</p>
+        <div id ="switch-box" class="switch-box">
+            <p class="darkmode-text" id="darkmode-text">Dark Mode</p>
             <!-- Rounded switch -->
             <label class="switch">
                 <input type="checkbox" onclick="toggleDarkMode()" id="darkmode-checkbox">

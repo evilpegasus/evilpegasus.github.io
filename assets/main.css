@@ -133,8 +133,17 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.fixed {
+.switch-box {
   position: fixed;
   bottom: 2%;
   right: 2%;
+  border: 0px solid;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 2px grey;
+  opacity: 1;
+}
+
+.darkmode-text {
+  margin: 8px;
+  font-size: 14;
 }
