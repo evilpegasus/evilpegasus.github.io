@@ -30,7 +30,7 @@ i {
 
 .icons {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 /* Disables the selection */
