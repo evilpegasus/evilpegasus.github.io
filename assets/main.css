@@ -134,6 +134,7 @@ input:checked + .slider:before {
 }
 
 .switch-box {
+  background-color: white;
   position: fixed;
   bottom: 2%;
   right: 2%;
