@@ -29,6 +29,8 @@ i {
 }
 
 .icons {
+  margin: auto;
+  width: 64%;
   display: flex;
   justify-content: space-between;
 }
