@@ -21,7 +21,7 @@ i {
 
 .profilepicture {
   border-radius: 50%;
-  width: 28%;
+  width: 36%;
   height: auto;
   display: block;
   margin: auto;
@@ -56,12 +56,6 @@ i {
   user-drag: none;
 }
 
-.wechat {
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
 .centertext {
   text-align: center;
 }
@@ -70,8 +64,6 @@ i {
   background-color: #1e1e1e;
   color: #d4d4d4;
 }
-
-
 
 /* The switch - the box around the slider */
 .switch {
